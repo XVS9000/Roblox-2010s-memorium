@@ -79,6 +79,10 @@ ul {
   margin: auto; 
 }
 
+form {
+  color: white;
+}
+
 li {
   
   color: white;

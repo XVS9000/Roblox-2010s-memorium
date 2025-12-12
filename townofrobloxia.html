@@ -4,6 +4,15 @@
     <head>
         <title>Welcome to the Town of Robloxia</title>
         <link href="css/roadblocks.css" rel="stylesheet" type="text/css"/>
+        <script>
+            function move_in(img_name,img_src) {
+                document[img_name].src=img_src;
+            }
+
+            function move_out(img_name,img_src) {
+                document[img_name].src=img_src;
+            }
+        </script>
     </head>
 
     <body>
@@ -40,7 +49,7 @@
                         </div>
                     </div>
                     <i id="quote"> "Not as cute as it used to be" </i>
-                    <a href="index.html">Return</a>
+                     <a class="button" href="index.html" OnMouseOver="move_in('image1','images/returnbutton1.png')" OnMouseOut="move_out('image1','images/returnbutton2.png')"><img src="images/returnbutton1.png" width= "150px" height="100px" alt="Move your mouse over here!" name="image1">
                 </div>
             </div>
         
