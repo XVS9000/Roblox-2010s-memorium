@@ -1,5 +1,4 @@
 body {
-    height: 100%;
     background: black;    
     animation: 5s ease-in fadein;
     display: grid;
@@ -8,7 +7,7 @@ body {
 .animated-gif{
     position: fixed;
     width: 100%;
-    height: auto;
+    height: 100%;
     background-image: url("rainy-day.gif");
     background-repeat: no-repeat;
     background-size:cover;
@@ -17,7 +16,7 @@ body {
 #main-stuff{
     width: 50%;
     height: auto;
-    position: absolute;
+    position: relative;
     padding-top: 20px;
     background-image: url("backgroundimg.png");
     background-repeat: no-repeat;
@@ -25,47 +24,49 @@ body {
     background-size: 100% 100%;
     border: 4px solid white;
     animation: 7s ease-in fadein;
-    overflow-wrap: everywhere;
+    overflow-y: scroll;
 }
 
-.header{
+#header{
   border: 4px solid white;
-  border-bottom: 2px solid white;
-  padding: 20px;
-  width: auto;
-  display: grid;
-  align-items: center;
   background-color: black;
+  display: flex;
+  padding: 25px;
+  align-content: center;
 }
 
 #container{
     margin: auto;
     overflow-wrap: anywhere;
     font: sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding-top: 20px;
+    padding-bottom: 20px;
+    float: none;
 }
 
 #text-container{
   padding: 20px;
   border: 4px solid white;
   margin: auto;
+  margin-bottom: 20px;
   width: 75%;
   object-fit: contain;
   height: 80%;
   display: grid;
   background-color: black;
+  overflow-y: scroll;
 }
 
 #quote{
   margin: auto;
-  padding-top: 25%;
+  padding-top: 20px;
   font-size: small;
   color: grey;
+  clear: none;
 }
 
 .image-content{
+  float: right;
   margin: auto;
   padding: 20px;
   width: 75px;
@@ -90,7 +91,6 @@ p {
 
 h1{
   margin: auto;
-  padding-top: 50px;
   color: white;
 }
 
